@@ -1,0 +1,88 @@
+.main-content{
+    min-height:calc(100%-80px);
+    border: 1px solid black;
+    
+    display:flex;
+    justify-content: center;
+    margin: 30px 270px 30px 240px;  
+}
+.google{
+    padding-top: 15px;
+    font-size: large;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    font-weight: normal;
+}
+.Acc{
+    padding-top: 0px;
+}
+.row.content{
+    box-sizing: content-box;
+    padding-top: 5px;
+}
+.main{
+    font-size: x-large;
+}
+.fname{
+    padding-top: 30px;
+}
+.username{
+    padding-top: 20px;
+}
+input {
+    width: 150px;
+    padding: 7px 15px 7px 15px;
+}
+.letter{
+font-size: small;
+padding-top: 2px;
+}
+.letters{
+font-size: small;
+}
+.lastname{
+margin-left: 15px;
+}
+.txt{
+ padding-top: 35px; 
+ color: #1a73e8;
+}
+.row{
+    padding-top: 60px;
+}
+.confirm{
+    margin-left: 15px;
+}
+.check{
+    padding-top: 10px;
+    padding-left: 0px;
+   
+}
+.show{
+    margin-left: -50px;
+}
+.box{
+    margin-left: -70px;
+    padding-left: 35px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+.sign{
+    padding-top: 45px;
+    color: #1a73e8;
+}
+.submit{
+margin-bottom: 50px;
+margin-left: 200px;
+padding: 10px 25px 10px 25px;
+background-color: #1a73e8;
+border-radius: 5px;
+color: white;
+border-color: #1a73e8;
+}
+.oneacc{
+margin-top: 350px;
+margin-left: 80px;
+}

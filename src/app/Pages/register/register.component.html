@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="../register/register.component.scss">
+<div class="main-content">
+    <form [formGroup]="exform">
+    <div>
+    <div class="google">
+        <div>
+       <span style="color: #1a73e8;">F</span>
+       <span style="color: #EA4335">u</span>
+       <span style="color: #FBBC05;">n</span>
+       <span style="color: #1a73e8;">d</span>
+       <span style="color: #34A853;">o</span>
+       <span style="color: #EA4335;">o</span>
+        </div>
+    </div> 
+    <div class="Acc">
+        <div class="main">Create your Fundoo Account</div>
+    </div  >
+    <div class="row-content">
+        <div class="fname">
+        <input type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="First name" >
+        <input type="text" formControlName="lastName"class="lastname" id="lastname" name="lastname" placeholder="Last name" >
+    </div>
+    </div>
+    <div class="row-content">
+        <div class="username">
+        <input type="text" formControlName="Username"id="Username" name="Username" placeholder="Username" pattern="[a-z]{1}">
+        <span>@gmail.com</span>
+        <div class="letter">You can use letters, numbers & periods</div>
+        <div class="txt">Use my current Gmail address instead</div>
+        </div>
+        <div class="row">
+            <input type="text" formControlName="Password" id="Password" name="Password" placeholder="Password">
+            <input type="text" class="confirm" id="Confirm" name="Confirm" placeholder="Confirm">
+            <div>
+            <span class="letters">Use 8 or more characters with a mix of letters, numbers & symbols</span>
+            </div>
+        </div>
+        <div class="check">
+        <input type="checkbox"  class="box" id="showpass" name="showpass">
+        <label class="show" for="showpass">Show password</label>
+        </div>
+        <div>
+            <div class="sign">Sign in instead
+            <button class="submit" formControlName="submit" type="submit" form="nameform" value="Submit">Next</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+    <div class="oneacc">
+        <div>
+        <img src="/img/Google.jpeg" alt="Google">
+        </div>
+        <span>One account.All of Fundoo</span><br> 
+        <span> working for you.</span>
+    </div>
+    </div>
+</form>
+</div>
