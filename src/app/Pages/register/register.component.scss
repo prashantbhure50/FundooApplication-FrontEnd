@@ -1,10 +1,13 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 .main-content{
     min-height:calc(100%-80px);
     border: 1px solid black;
+    Padding-left: 35px;
+    display: flex;
     
-    display:flex;
-    justify-content: center;
-    margin: 30px 270px 30px 240px;  
+
+    padding-bottom: 0px;
+    margin: 30px 250px 35px 250px;  
 }
 .google{
     padding-top: 15px;
@@ -18,8 +21,11 @@
     padding-top: 0px;
 }
 .row.content{
+    display: flex;
+    flex-direction: column;
     box-sizing: content-box;
     padding-top: 5px;
+    padding-right: 400px;
 }
 .main{
     font-size: x-large;
@@ -51,26 +57,28 @@ margin-left: 15px;
 .row{
     padding-top: 60px;
 }
+.rowc{
+    margin-left: 440px;
+}
 .confirm{
     margin-left: 15px;
 }
 .check{
-    padding-top: 10px;
-    padding-left: 0px;
+    padding-top: 15px;
+  margin-left: -70px;
    
 }
 .show{
     margin-left: -50px;
 }
 .box{
-    margin-left: -70px;
-    padding-left: 35px;
+    padding-left: 5px;
     padding-top: 3px;
     cursor: pointer;
     font-size: 22px;
   }
 .sign{
-    padding-top: 45px;
+    padding-top: 25px;
     color: #1a73e8;
 }
 .submit{
@@ -82,7 +90,23 @@ border-radius: 5px;
 color: white;
 border-color: #1a73e8;
 }
-.oneacc{
-margin-top: 350px;
-margin-left: 80px;
+.gmail{
+    margin-left: 15px;
+    font-size: large;
 }
+.oneacc{
+margin-top: 140px;
+margin-left: 30px;
+height: 100px;
+}
+@media only screen and (max-width: 400px) {
+    .row-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .fname{
+        display: flex;
+        flex-direction: column;
+        size: 30px;
+    }
+  }

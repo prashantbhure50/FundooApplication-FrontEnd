@@ -9,7 +9,6 @@ const routes: Routes = [
   { path:'login',component:LoginComponent},
   {path:'Register',component:RegisterComponent},
   {path:'ForgotPassword',component:ForgotPasswordComponent}
-  
 ];
 
 @NgModule({
