@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../Login/login.component.scss">
 <div class="main-content">
     <div>
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <div class="google">
         <div>
        <span style="color: #1a73e8;">F</span>
@@ -22,12 +23,22 @@
         <div class="name">
         <mat-form-field appearance="outline" class="fname">
             <mat-label>Email or phone</mat-label>
-            <input matInput placeholder="Email or phone">       
+            <input matInput placeholder="Email or phone" formControlName="firstName">   
+            <mat-error>This field is required</mat-error>    
           </mat-form-field>
         
 
     </div>
     <div class="forgot"> Forgot email?</div>
+    <div class="name">
+        <mat-form-field appearance="outline" class="fname">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="password" formControlName="password">   
+            <mat-error>This field is required</mat-error>    
+          </mat-form-field>
+        
+
+    </div>
     <div class="paragraph">Not your computer? Use Guest mode to sign in privately.</div>
     <div class="learn">Learn more</div>
     <div>
@@ -37,5 +48,6 @@
     <button class="submit" type="submit" form="nameform" value="Submit">Next</button>
     </div>
     </div>
+</form>
     </div>
 </div>

@@ -1,52 +1,77 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
-.main-content{
-    min-height:calc(100%-80px);
-    border: 1px solid black;
-    Padding-left: 35px;
+.main-content{  
     display: flex;
-    
-
-    padding-bottom: 0px;
-    margin: 30px 250px 35px 250px;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    margin-right: 170px;
+    border: 3px solid #E8E8E8;
 }
 .google{
-    padding-top: 15px;
-    font-size: large;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    font-size: x-large;
-    font-weight: normal;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+   font-size: x-large;
 }
 .Acc{
-    padding-top: 0px;
-}
-.row.content{
     display: flex;
-    flex-direction: column;
-    box-sizing: content-box;
-    padding-top: 5px;
-    padding-right: 400px;
+    justify-content: space-between;
+    margin-top: 10px;
+    
 }
+
 .main{
     font-size: x-large;
 }
 .fname{
-    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10px;
+  
+    
+}
+.lname{
+margin-left: 30px;
+    margin-top: 10px;
+    
+}
+input {
+    width: 150px;
+    padding: 5px 10px 5px 10px;
+}
+.ename{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    width: 00px;
+    width: 150px;
+    
 }
 .username{
     padding-top: 20px;
 }
-input {
-    width: 150px;
-    padding: 7px 15px 7px 15px;
+.pass{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.confirmpass{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 .letter{
 font-size: small;
-padding-top: 2px;
+margin-top: 5px;
 }
-.letters{
-font-size: small;
-}
+
 .lastname{
 margin-left: 15px;
 }
@@ -54,15 +79,11 @@ margin-left: 15px;
  padding-top: 35px; 
  color: #1a73e8;
 }
-.row{
-    padding-top: 60px;
-}
+
 .rowc{
     margin-left: 440px;
 }
-.confirm{
-    margin-left: 15px;
-}
+
 .check{
     padding-top: 15px;
   margin-left: -70px;
@@ -70,6 +91,7 @@ margin-left: 15px;
 }
 .show{
     margin-left: -50px;
+    font-size: medium;
 }
 .box{
     padding-left: 5px;
@@ -78,6 +100,7 @@ margin-left: 15px;
     font-size: 22px;
   }
 .sign{
+    font-size: medium;
     padding-top: 25px;
     color: #1a73e8;
 }
@@ -94,19 +117,51 @@ border-color: #1a73e8;
     margin-left: 15px;
     font-size: large;
 }
+.row-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+  }
 .oneacc{
-margin-top: 140px;
-margin-left: 30px;
-height: 100px;
+display: flex;
+flex-direction: column;
+margin-left: -120px;
+margin-bottom: 80px;
 }
-@media only screen and (max-width: 400px) {
+.last{
+    margin-left: 60px;
+}
+@media only screen and (max-width: 600px) {
     .row-content {
-      display: flex;
+      display: block;
       flex-direction: column;
+      justify-content: space-between;
+      width: 80px;
     }
-    .fname{
+    .fname,.lname{
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80px;
+        
+    }
+    .google,.oneacc,.sign{
+        display: block;
+        flex-direction: column;
+        height: 50px;
+        width: 50px;
+    }
+    .ename,.confirmpass,.pass,.letters,.letter,.txt{
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80px;
+    }
+    img{
         display: flex;
         flex-direction: column;
-        size: 30px;
+        justify-content: flex-end;
+        width: 80px;
     }
   }
