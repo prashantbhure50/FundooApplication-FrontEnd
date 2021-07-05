@@ -11,13 +11,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ForgotPasswordComponent } from './Pages/forgot-password/forgot-password.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { DashBoardComponent } from './Pages/dash-board/dash-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    DashBoardComponent
   ],
   imports: [
     BrowserModule,

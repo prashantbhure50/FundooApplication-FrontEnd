@@ -3,165 +3,108 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
     border: 3px solid #E8E8E8;
 }
 .google{
-   display: flex;
-   justify-content: space-between;
-   margin-top: 5px;
-   font-size: x-large;
+    padding-top: 10px;
+    font-size: large;
 }
-.Acc{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    
-}
-
 .main{
-    font-size: x-large;
+    padding-top: 10px;
+    font-size: large;
 }
 .fname{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 10px;
-  
-    
+    padding-top: 10px;
 }
-.lname{
-margin-left: 30px;
-    margin-top: 10px;
-    
+.lname,.confirmpass{
+    padding-left: 15px;
 }
-input {
-    width: 150px;
-    padding: 5px 10px 5px 10px;
+.letter{
+    font-size: smaller;
 }
-.ename{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -10px;
-    width: 00px;
-    width: 150px;
-    
+.letters{
+    font-size: smaller;
+    padding-top: -5px;
 }
-.username{
+.txt{
+    color: #1a73e8;
     padding-top: 20px;
 }
 .pass{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 10px;
+    padding-top: 10px;
 }
-.confirmpass{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-.letter{
-font-size: small;
-margin-top: 5px;
-}
-
-.lastname{
-margin-left: 15px;
-}
-.txt{
- padding-top: 35px; 
- color: #1a73e8;
-}
-
-.rowc{
-    margin-left: 440px;
-}
-
 .check{
-    padding-top: 15px;
-  margin-left: -70px;
-   
+    padding-top: 10px;
 }
-.show{
-    margin-left: -50px;
-    font-size: medium;
-}
-.box{
-    padding-left: 5px;
-    padding-top: 3px;
-    cursor: pointer;
-    font-size: 22px;
-  }
 .sign{
-    font-size: medium;
-    padding-top: 25px;
+    padding-top: 15px;
     color: #1a73e8;
 }
 .submit{
-margin-bottom: 50px;
+    margin-bottom: 50px;
 margin-left: 200px;
 padding: 10px 25px 10px 25px;
 background-color: #1a73e8;
 border-radius: 5px;
 color: white;
-border-color: #1a73e8;
+border-color: #1a73e8
 }
-.gmail{
-    margin-left: 15px;
-    font-size: large;
-}
-.row-content {
+.oneacc{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 600px;
-  }
-.oneacc{
-display: flex;
-flex-direction: column;
-margin-left: -120px;
-margin-bottom: 80px;
+    margin-left: 50px;
+    margin-bottom: 80px;
 }
 .last{
-    margin-left: 60px;
+    padding-left: 30px;
 }
-@media only screen and (max-width: 600px) {
-    .row-content {
-      display: block;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 80px;
-    }
-    .fname,.lname{
-        display: block;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 80px;
-        
-    }
-    .google,.oneacc,.sign{
-        display: block;
-        flex-direction: column;
-        height: 50px;
-        width: 50px;
-    }
-    .ename,.confirmpass,.pass,.letters,.letter,.txt{
-        display: block;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 80px;
-    }
-    img{
+@media only screen and (max-width: 800px) {
+
+    .main-content,.google{
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        width: 80px;
     }
-  }
+    .main{
+       display: flex;
+       flex-direction: column;
+       font-size: smaller;
+    }
+    .fname,.pass,.ename{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
+    .lname,.confirmpass{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        padding-left: 0px;
+    }
+    .letter,.txt,.letters{
+       display: flex;
+       flex-direction: column;
+       font-size: smaller;
+    }
+    .check,.sign{
+        display: flex;
+       flex-direction: column;
+       font-size: smaller;
+    }
+    .submit{
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+        padding: 3px 5px 3px 5px;
+        background-color: hsl(214, 82%, 51%);
+        border-radius: 2px;
+        margin-left: 250px;
+        margin-right: 40px;
+    }
+    img,.last{
+        display: none;
+    }
+}
