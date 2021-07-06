@@ -1,34 +1,113 @@
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+mat-toolbar {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  height: 70px;
+  border:3px solid lightgray;
+}
+mat-sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px;
+  width: 200px;
+  background: white;
+  color: #202124 ;
+  border-radius: 10px;
+  padding: 16px;
+}
+.menu-button{
+   display: flex;
+  flex-direction: column;
   
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
+
+}
+.menuicons{
+  margin-left: 5px;
+}
+.keep{
+  color:black ;
+  margin-left: 100px;
+  margin-top: -3px;
+}
+
+.refreshicons{
+  margin-left: 50px;
+  margin-top: 5px;
+}
+.dnsicons,.settingsicons{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.accounticons{
+  margin-left: 20px;
+}
+.appsicon{
+  margin-left: 50px;
+}
+.searchicons{
+  margin-left: -40px;
+  padding-top: 10px;
+}
+.content {
+  height: calc(100vh);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color:white;
+}
+mat-sidenav-container {
+  height: calc(100vh );
+}
+.input{
+  background-color: white;
+  color:white;
+  padding-left: 10px;
+  border-top: none;
+  border-color:  white;
+  width: 600px;
+  height: 5px;
+  border-radius: 0px;
+  margin-top: -10px;
+
+}
+.imp{
+  background-color: white;
+  color:white;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-top: none;
+  border-color:  white;
+  width: 600px;
+  height: 5px;
+  border-radius: 0px;
+  margin-top: -10px;
+
+}
+.place{
+  display: flex;
+  flex-direction: row;
+  border:3px solid white;
+  color: black;
+  background-color: #F0F0F0;
+  margin-left: 100px;
+  padding-left: 50px;
+  width: 600px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border-color: lightgray;
+}
+.search{
+  color: white;
+  background-color: white;
+}
+.notes1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}

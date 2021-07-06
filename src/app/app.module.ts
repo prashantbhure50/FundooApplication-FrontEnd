@@ -12,6 +12,11 @@ import { ForgotPasswordComponent } from './Pages/forgot-password/forgot-password
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { DashBoardComponent } from './Pages/dash-board/dash-board.component';
+import{MatToolbarModule} from  '@angular/material/Toolbar';
+import{MatSidenavModule} from  '@angular/material/Sidenav';
+import{MatIconModule} from  '@angular/material/Icon';
+import{MatDividerModule} from  '@angular/material/Divider';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +34,11 @@ import { DashBoardComponent } from './Pages/dash-board/dash-board.component';
     MatFormFieldModule,
     ReactiveFormsModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

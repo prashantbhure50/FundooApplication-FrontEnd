@@ -33,3 +33,15 @@ export class RegisterComponent  {
 }
 
 }
+
+
+// let data = {
+//   "firstName": this.f.firstName.value,
+//   "lastName":this.f.lastName.value,
+//   "email":this.f.email.value,
+//   "password":this.f.password.value
+// }
+// this.service.registration(data).subscribe(data => {
+//   console.log(data);
+//   this.snackBar.open("Registration Successful","Exit")
+// })

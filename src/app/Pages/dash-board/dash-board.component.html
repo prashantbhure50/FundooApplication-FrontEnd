@@ -1,17 +1,97 @@
-<p>dash-board works!</p>
-<link rel="stylesheet" href="../dash-board/dash-board.component.scss">
+<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
 
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Notes</a>
-    <a href="#">Reminder</a>
-    <a href="#">hello</a>
-    <a href="#">Inspriation</a>
-    <a href="#">Personal</a>
-    <a href="#">Sorry</a>
-    <a href="#">Work</a>
-    <a href="#">Edit labels</a>
-    <a href="#">Archive</a>
-    <a href="#">Bin</a>
+<mat-toolbar class="toolbar">
+  <div class="menuicons">
+    <mat-icon class="material-icons-outlined iconColor">menu</mat-icon>
   </div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div>
+    <img src="/img/keep_2020q4_48dp.png" alt="">
+  </div>
+<div class="keep">Keep</div>
+<div class="place">
+  <div class="searchicons">
+    <mat-icon class="material-icons-outlined iconColor">search</mat-icon>
+  </div>
+  <div class="input">
+  <mat-form-field appearance="outline" class="imp">
+    <input type="search" matInput placeholder="Search">
+  </mat-form-field>
+  </div>
+  <div class="searchicons">
+    <mat-icon class="material-icons-outlined iconColor">clear</mat-icon>
+  </div>
+</div>
+
+
+<div class="refreshicons">
+  <mat-icon class="material-icons-outlined iconColor">refresh</mat-icon>
+</div>
+<div class="dnsicons">
+  <mat-icon class="material-icons-outlined iconColor">dns</mat-icon>
+</div>
+<div class="settingsicons">
+  <mat-icon class="material-icons-outlined iconColor">settings</mat-icon>
+</div>
+<div class="appsicon">
+  <mat-icon class="material-icons-outlined iconColor">apps</mat-icon>
+</div>
+<div class="accounticons">
+  <mat-icon class="material-icons-outlined iconColor">account_circle</mat-icon>
+</div>
+<mat-divider></mat-divider>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    
+    <mat-sidenav mode="side" opened>
+      <button mat-button class="menu-button">
+        <mat-icon>lightbulb</mat-icon>
+        <span>Notes</span>
+    </button>
+    <button mat-button class="menu-button">
+        <mat-icon>notifications_none</mat-icon>
+        <span>Reminders</span>
+    </button>
+    <button mat-button class="menu-button">
+        <mat-icon>forward</mat-icon>
+        <span>hello</span>
+    </button>
+
+    <button mat-button class="menu-button">
+      <mat-icon>forward</mat-icon>
+      <span>Inspiration</span>
+  </button>
+  <button mat-button class="menu-button">
+      <mat-icon>forward</mat-icon>
+      <span>Personal</span>
+  </button>
+  <button mat-button class="menu-button">
+      <mat-icon>forward</mat-icon>
+      <span>sorry</span>
+  </button>
+
+
+  <button mat-button class="menu-button">
+    <mat-icon>forward</mat-icon>
+    <span>Work</span>
+</button>
+<button mat-button class="menu-button">
+    <mat-icon>edit_outline</mat-icon>
+    <span>Edit labels</span>
+</button>
+<button mat-button class="menu-button">
+    <mat-icon>archive_outline</mat-icon>
+    <span>Archive</span>
+</button>
+    <button mat-button class="menu-button">
+        <mat-icon>delete_outline</mat-icon>
+        <span>Bin</span>
+    </button>
+
+</mat-sidenav>
+      <mat-sidenav-content>
+         <div class="content mat-elevation-z8">
+             Main content here!
+         </div>
+      </mat-sidenav-content>
+  </mat-sidenav-container>
