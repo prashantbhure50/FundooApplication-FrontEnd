@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+.main-content{
+border: 2px solid #DCDCDC;
+color:  #DCDCDC;
+margin-top: 50px;
+margin-left: -260px;
+width: 450px;
+height: 100px;
+border-radius: 10px;
+}
+.placeholder{
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  color: #606060;
+  justify-content: space-around;
+}

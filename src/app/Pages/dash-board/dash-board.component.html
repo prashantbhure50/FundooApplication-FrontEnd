@@ -13,7 +13,7 @@
     <mat-icon class="material-icons-outlined iconColor">search</mat-icon>
   </div>
   <div class="input">
-  <mat-form-field appearance="outline" class="imp">
+  <mat-form-field appearance="standard" class="imp">
     <input type="search" matInput placeholder="Search">
   </mat-form-field>
   </div>
@@ -42,54 +42,100 @@
   <mat-sidenav-container>
     
     <mat-sidenav mode="side" opened="true">
-
-      <button mat-button *ngIf="isExpanded">
-        <span class="material-icons-outlined">lightbulb
+<div class="side">
+      <button mat-button class="rem">
+        <span class="material-icons-outlined ">lightbulb
           </span>
-          <span >Notes</span>
+          <span *ngIf="isExpanded" class="btn">Notes</span>
     </button>
-    <button mat-button *ngIf="isExpanded">
-      <span class="material-icons-outlined">notifications_none</span>
-        <span >Reminders</span>
+    <button mat-button >
+      <span class="material-icons-outlined ">notifications_none</span>
+        <span *ngIf="isExpanded" class="btn">Reminders</span>
   </button>
-  <button mat-button *ngIf="isExpanded">
+  <button mat-button >
     <span class="material-icons-outlined">forward
       </span>
-      <span >hello</span>
+      <span *ngIf="isExpanded" class="btn">hello</span>
 </button>
 
-<button mat-button *ngIf="isExpanded">
+<button mat-button >
   <span class="material-icons-outlined">forward
     </span>
-    <span >Personal</span>
+    <span *ngIf="isExpanded" class="btn">Personal</span>
 </button>
-  <button mat-button *ngIf="isExpanded">
+  <button mat-button >
     <span class="material-icons-outlined">forward
       </span>
-      <span >work</span>
+      <span *ngIf="isExpanded" class="btn">work</span>
 </button>
-<button mat-button *ngIf="isExpanded">
+<button mat-button >
     <span class="material-icons-outlined">forward
       </span>
-      <span >Edit labels</span>
+      <span *ngIf="isExpanded" class="btn">Edit labels</span>
 </button>
-<button mat-button *ngIf="isExpanded">
-  <span class="material-icons-outlined">archive
+<button mat-button >
+  <span class="material-icons-outlined" >archive
     </span>
-    <span >Archive</span>
+    <span *ngIf="isExpanded" class="btn">Archive</span>
 </button>
-<button mat-button *ngIf="isExpanded">
-  <span class="material-icons-outlined" *ngIf="isExpanded">delete
+<button mat-button >
+  <span class="material-icons-outlined" >delete
     </span>
-    <span *ngIf="isExpanded">bin</span>
+    <span *ngIf="isExpanded" class="btn">bin</span>
 </button>
 
-
+</div>
 </mat-sidenav>
       <mat-sidenav-content>
          <div class="content mat-elevation-z8">
-             <div class="bar">
-                  
+             <div >
+              <div class="main-content">
+                <div class="placeholder">
+                    <label >
+                        <input type="text" placeholder="Title" class="matinput"> 
+                    </label>
+                </div>
+                <div class="placeholder">
+                    <label >
+                        <input type="text" placeholder="note" class="matinput">
+                    </label>
+                </div>
+               
+                
+                <div class="matbtn">
+                    <button mat-button >
+                        <span class="material-icons-outlined ">add_alert</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">person_add</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">palette</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">image</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">archive</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">more_vert</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">undo</span>
+                    </button>
+                    <button mat-button >
+                        <span class="material-icons-outlined ">redo</span>
+                    </button>
+                    <button mat-button >
+                        <span class="close">close</span>
+                    </button>
+                </div>
+                </div>
+
+                <div *ngFor = "let noteObj of fetchData">
+                  <app-notes [noteObj] = noteObj ></app-notes>
+                </div>
              </div>
          </div>
       </mat-sidenav-content>

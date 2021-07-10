@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { HTTPUserService } from 'src/app/Service/httpuser.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent  {
     password:new FormControl('',Validators.required),
    
   })
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder,private userService:HTTPUserService) { }
 
   ngOnInit(): void {
   }

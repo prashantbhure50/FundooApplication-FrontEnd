@@ -11,7 +11,7 @@ mat-sidenav {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0px;
-  width: 200px;
+  width: 150px;
   background: white;
   color: #202124 ;
   border-radius: 10px;
@@ -108,7 +108,7 @@ mat-sidenav-container {
  
 }
 .iconColor:hover{
-border: 2px solid #888888;
+border: 2px solid #F0F0F0;
 border-radius: 100px;
 border-color: black;
 background-color: #D0D0D0;
@@ -121,8 +121,59 @@ background-color: #D0D0D0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
-.material-icons-outlined{
+.side{
+  display: flex;
   flex-direction: column;
+  margin-left: -50px;
+  
 }
+mat-button{
+display: flex;
+flex-direction: column;
+padding-left: 120px;
+}
+.mainbar{
+  margin-top: -450px;
+}
+.main{
+  margin-top: 20px;
+  margin-left: -120px;
+}
+.searchbar{
+  width:500px ;
+  height: 50px;
+  border: 2px solid #DCDCDC;
+  border-radius: 10px;
+  padding-left: 20px;
+  
+}
+.btn{
+  color: #606060;
+}
+  .main-content{
+    border: 2px solid #DCDCDC;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+    }
+    .matbtn{
+      display: flex;
+      align-items: flex-end;
+      padding-top: 40px;
+      flex-direction: row;
+      color: #606060;
+    }
+    .matinput{
+      width: 150x;
+      height: 30px;
+      margin-left: 10px;
+      appearance: standard;
+      border:none ;
+    }
+    input{
+      width: 300px;
+    }
+   

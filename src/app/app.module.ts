@@ -16,6 +16,8 @@ import{MatToolbarModule} from  '@angular/material/Toolbar';
 import{MatSidenavModule} from  '@angular/material/Sidenav';
 import{MatIconModule} from  '@angular/material/Icon';
 import{MatDividerModule} from  '@angular/material/Divider';
+import {  HttpClientModule } from '@angular/common/http';
+import { NotesComponent } from './Pages/notes/notes.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import{MatDividerModule} from  '@angular/material/Divider';
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    DashBoardComponent
+    DashBoardComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import{MatDividerModule} from  '@angular/material/Divider';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
