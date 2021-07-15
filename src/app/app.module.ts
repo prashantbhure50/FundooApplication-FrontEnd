@@ -18,6 +18,7 @@ import{MatIconModule} from  '@angular/material/Icon';
 import{MatDividerModule} from  '@angular/material/Divider';
 import {  HttpClientModule } from '@angular/common/http';
 import { NotesComponent } from './Pages/notes/notes.component';
+import { CreatenotesComponent } from './createnotes/createnotes.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { NotesComponent } from './Pages/notes/notes.component';
     RegisterComponent,
     ForgotPasswordComponent,
     DashBoardComponent,
-    NotesComponent
+    NotesComponent,
+    CreatenotesComponent
   ],
   imports: [
     BrowserModule,

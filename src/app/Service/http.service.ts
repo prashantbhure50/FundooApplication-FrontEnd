@@ -7,8 +7,8 @@ import{HttpClient} from '@angular/common/http'
 export class HttpService {
 
   constructor(private http: HttpClient) { }
-  post(url: string, data: any, isHeaderRequried: any = false, headers= null){
-return this.http.post(url, data, isHeaderRequried && headers);
+  post(url: string, data:any, isHeaderRequried: any = false, headers= null){
+return this.http.post(url, isHeaderRequried && headers,data);
   }
   get(url:string, isHeaderRequried:any = false, headers = null){
     return this.http.get(url,isHeaderRequried && headers);

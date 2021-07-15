@@ -43,42 +43,42 @@
     
     <mat-sidenav mode="side" opened="true">
 <div class="side">
-      <button mat-button class="rem">
+      <button mat-button class="rem matbutton">
         <span class="material-icons-outlined ">lightbulb
           </span>
           <span *ngIf="isExpanded" class="btn">Notes</span>
     </button>
-    <button mat-button >
+    <button mat-button class="matbutton">
       <span class="material-icons-outlined ">notifications_none</span>
         <span *ngIf="isExpanded" class="btn">Reminders</span>
   </button>
-  <button mat-button >
+  <button mat-button class="matbutton">
     <span class="material-icons-outlined">forward
       </span>
       <span *ngIf="isExpanded" class="btn">hello</span>
 </button>
 
-<button mat-button >
+<button mat-button class="matbutton">
   <span class="material-icons-outlined">forward
     </span>
     <span *ngIf="isExpanded" class="btn">Personal</span>
 </button>
-  <button mat-button >
+  <button mat-button class="matbutton" >
     <span class="material-icons-outlined">forward
       </span>
       <span *ngIf="isExpanded" class="btn">work</span>
 </button>
-<button mat-button >
+<button mat-button class="matbutton" >
     <span class="material-icons-outlined">forward
       </span>
       <span *ngIf="isExpanded" class="btn">Edit labels</span>
 </button>
-<button mat-button >
+<button mat-button class="matbutton">
   <span class="material-icons-outlined" >archive
     </span>
     <span *ngIf="isExpanded" class="btn">Archive</span>
 </button>
-<button mat-button >
+<button mat-button class="matbutton">
   <span class="material-icons-outlined" >delete
     </span>
     <span *ngIf="isExpanded" class="btn">bin</span>
@@ -87,21 +87,21 @@
 </div>
 </mat-sidenav>
       <mat-sidenav-content>
-         <div class="content mat-elevation-z8">
+         <div class="content">
              <div >
+<form name="form" [formGroup]="myForm" >
               <div class="main-content">
                 <div class="placeholder">
                     <label >
-                        <input type="text" placeholder="Title" class="matinput"> 
+                        <input type="text" placeholder="Title" class="matinput" formControlName="title"> 
                     </label>
                 </div>
                 <div class="placeholder">
                     <label >
-                        <input type="text" placeholder="note" class="matinput">
+                        <input type="text" placeholder="note" class="matinput" formControlName="note">
                     </label>
                 </div>
                
-                
                 <div class="matbtn">
                     <button mat-button >
                         <span class="material-icons-outlined ">add_alert</span>
@@ -116,7 +116,7 @@
                         <span class="material-icons-outlined ">image</span>
                     </button>
                     <button mat-button >
-                        <span class="material-icons-outlined ">archive</span>
+                        <span class="material-icons-outlined " >archive</span>
                     </button>
                     <button mat-button >
                         <span class="material-icons-outlined ">more_vert</span>
@@ -128,12 +128,14 @@
                         <span class="material-icons-outlined ">redo</span>
                     </button>
                     <button mat-button >
-                        <span class="close">close</span>
+                        <span class="close" (click)="close()">close</span>
                     </button>
                 </div>
+                
                 </div>
+                </form>
 
-                <div *ngFor = "let noteObj of fetchData">
+                <div *ngFor = "let noteObj of fetchData" >
                   <app-notes [noteObj] = noteObj ></app-notes>
                 </div>
              </div>

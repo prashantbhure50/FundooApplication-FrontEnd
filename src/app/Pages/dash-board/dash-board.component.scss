@@ -9,7 +9,8 @@ mat-toolbar {
 mat-sidenav {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   margin: 0px;
   width: 150px;
   background: white;
@@ -57,7 +58,9 @@ img{
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  
   font-size: 2rem;
   color:white;
 }
@@ -113,6 +116,13 @@ border-radius: 100px;
 border-color: black;
 background-color: #D0D0D0;
 }
+.matbutton{
+  line-height: 50px;
+}
+.matbutton:hover{
+  background-color: #fcffa4;
+  border-radius: 20px 
+}
 .search{
   color: white;
   background-color: white;
@@ -125,13 +135,13 @@ background-color: #D0D0D0;
 .side{
   display: flex;
   flex-direction: column;
-  margin-left: -50px;
+  margin-left: -80px;
   
 }
 mat-button{
 display: flex;
 flex-direction: column;
-padding-left: 120px;
+padding-left: 10px;
 }
 .mainbar{
   margin-top: -450px;
@@ -150,15 +160,21 @@ padding-left: 120px;
 }
 .btn{
   color: #606060;
+  padding-left: 10px;
+}
+.material-icons-outlined{
+  padding-left: 2px;
 }
   .main-content{
     border: 2px solid #DCDCDC;
-    margin-top: -50px;
-    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 600px;
     height: 150px;
     border-radius: 10px;
     }
+   
     .matbtn{
       display: flex;
       align-items: flex-end;
@@ -176,4 +192,7 @@ padding-left: 120px;
     input{
       width: 300px;
     }
-   
+.forloop{
+     display: flex;
+     flex-direction: row;
+}
